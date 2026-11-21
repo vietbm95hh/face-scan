@@ -1,0 +1,9 @@
+facebook-gql-scraper==0.8.4
+psycopg[binary]>=3.2
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-dotenv>=1.0
+# playwright: đọc ô tìm kiếm Facebook bằng browser khi GraphQL bị chặn (error 1357004).
+# Dùng cho /api/search/*, quét --keyword --engine auto|browser, và discover.py --source playwright.
+# Sau khi pip install nhớ chạy: playwright install chromium
+playwright>=1.47
